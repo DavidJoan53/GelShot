@@ -1,0 +1,32 @@
+[
+  {
+    "name": "gel",
+    "path": "/gel",
+    "component": "/home/kevin/Documents/GitHub/GelShot/pages/gel/index.vue",
+    "chunkName": "pages/gel/index"
+  },
+  {
+    "name": "gomas",
+    "path": "/gomas",
+    "component": "/home/kevin/Documents/GitHub/GelShot/pages/gomas/index.vue",
+    "chunkName": "pages/gomas/index"
+  },
+  {
+    "name": "gel-detalles",
+    "path": "/gel/detalles",
+    "component": "/home/kevin/Documents/GitHub/GelShot/pages/gel/detalles.vue",
+    "chunkName": "pages/gel/detalles"
+  },
+  {
+    "name": "gomas-detalles",
+    "path": "/gomas/detalles",
+    "component": "/home/kevin/Documents/GitHub/GelShot/pages/gomas/detalles.vue",
+    "chunkName": "pages/gomas/detalles"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/kevin/Documents/GitHub/GelShot/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]
