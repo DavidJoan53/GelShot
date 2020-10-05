@@ -1,32 +1,37 @@
 [
   {
-    "name": "gel",
-    "path": "/gel",
-    "component": "/home/kevin/Documents/GitHub/GelShot/pages/gel/index.vue",
-    "chunkName": "pages/gel/index"
+    "name": "gelatinas",
+    "path": "/gelatinas",
+    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gelatinas\\\\index.vue",
+    "chunkName": "pages/gelatinas/index",
+    "_name": "_f93d7614"
   },
   {
     "name": "gomas",
     "path": "/gomas",
-    "component": "/home/kevin/Documents/GitHub/GelShot/pages/gomas/index.vue",
-    "chunkName": "pages/gomas/index"
+    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gomas\\\\index.vue",
+    "chunkName": "pages/gomas/index",
+    "_name": "_72915c92"
   },
   {
-    "name": "gel-detalles",
-    "path": "/gel/detalles",
-    "component": "/home/kevin/Documents/GitHub/GelShot/pages/gel/detalles.vue",
-    "chunkName": "pages/gel/detalles"
+    "name": "gelatinas-detalles",
+    "path": "/gelatinas/detalles",
+    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gelatinas\\\\detalles.vue",
+    "chunkName": "pages/gelatinas/detalles",
+    "_name": "_39595868"
   },
   {
     "name": "gomas-detalles",
     "path": "/gomas/detalles",
-    "component": "/home/kevin/Documents/GitHub/GelShot/pages/gomas/detalles.vue",
-    "chunkName": "pages/gomas/detalles"
+    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gomas\\\\detalles.vue",
+    "chunkName": "pages/gomas/detalles",
+    "_name": "_340f8807"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/home/kevin/Documents/GitHub/GelShot/pages/index.vue",
-    "chunkName": "pages/index"
+    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_1c648f74"
   }
 ]

@@ -30,7 +30,7 @@ export default {
        {
         hid: "description",
         name:"description",
-        content:"Aqui,posteriormente colocaremos informacion sobre la pagina, que vende, y esas cosas, algo breve"
+        content:"Aqui, posteriormente colocaremos informacion sobre la pagina, que vende, y esas cosas, algo breve"
        }
      ],
      htmlAttrs: {

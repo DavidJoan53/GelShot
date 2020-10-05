@@ -3,11 +3,11 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _6d8d93b2 = () => interopDefault(import('../pages/gel/index.vue' /* webpackChunkName: "pages/gel/index" */))
-const _1c9a7f90 = () => interopDefault(import('../pages/gomas/index.vue' /* webpackChunkName: "pages/gomas/index" */))
-const _0473e4d2 = () => interopDefault(import('../pages/gel/detalles.vue' /* webpackChunkName: "pages/gel/detalles" */))
-const _0423df8e = () => interopDefault(import('../pages/gomas/detalles.vue' /* webpackChunkName: "pages/gomas/detalles" */))
-const _7f130ab0 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _f93d7614 = () => interopDefault(import('..\\pages\\gelatinas\\index.vue' /* webpackChunkName: "pages/gelatinas/index" */))
+const _72915c92 = () => interopDefault(import('..\\pages\\gomas\\index.vue' /* webpackChunkName: "pages/gomas/index" */))
+const _39595868 = () => interopDefault(import('..\\pages\\gelatinas\\detalles.vue' /* webpackChunkName: "pages/gelatinas/detalles" */))
+const _340f8807 = () => interopDefault(import('..\\pages\\gomas\\detalles.vue' /* webpackChunkName: "pages/gomas/detalles" */))
+const _1c648f74 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -26,24 +26,24 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
-    path: "/gel",
-    component: _6d8d93b2,
-    name: "gel"
+    path: "/gelatinas",
+    component: _f93d7614,
+    name: "gelatinas"
   }, {
     path: "/gomas",
-    component: _1c9a7f90,
+    component: _72915c92,
     name: "gomas"
   }, {
-    path: "/gel/detalles",
-    component: _0473e4d2,
-    name: "gel-detalles"
+    path: "/gelatinas/detalles",
+    component: _39595868,
+    name: "gelatinas-detalles"
   }, {
     path: "/gomas/detalles",
-    component: _0423df8e,
+    component: _340f8807,
     name: "gomas-detalles"
   }, {
     path: "/",
-    component: _7f130ab0,
+    component: _1c648f74,
     name: "index"
   }],
 
