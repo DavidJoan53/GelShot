@@ -2,50 +2,43 @@
     <div class="Fondo">
         <Navigation/>
         <div class="cabecera">
-            <h1 class="neon" data-text="[GELATINAS]">[GELATINAS]</h1>
+            <h1 class="neon" data-text="[GOMITAS_GELSHOT]">[GOMITAS_GELSHOT]</h1>
         </div>
 
         <div class="cuerpo">
-            <!--Tajerta #1-->
+            <div class="contenedor-tarjeta">
+                <!--Tajerta #1-->
             <div class="tarjeta">
-                <img class="tarjeta-image" src="../../static/placeholder-1.jpg">
-                <div class="tarjeta-contenido">
-                    <h4>BAD GUY</h4>
-                    <div class="tarjeta-texto">
-                        <p>3 x $14.000</p>
-                        
-                    </div>
+                <div class="marco-imagen">
+                    <img class="tarjeta-image" src="../../static/placeholder-1.jpg">
                 </div>
+                <div class="tarjeta-contenido">
+                    <h4 data-text="BAD GUY">BAD GUY</h4>
+                </div> <!--
                 <div class="contenedor">
                     <span class="carrito">
                         <i class="fas fa-cart-plus"></i>
                     </span>
-                </div>
+                </div> -->
             </div>
             <!--Tajerta #2-->
             <div class="tarjeta">
-                <img class="tarjeta-image" src="../../static/placeholder-2.jpg">
+                <div class="marco-imagen">
+                    <img class="tarjeta-image" src="../../static/placeholder-2.jpg">
+                </div>
                 <div class="tarjeta-contenido">
                     <h4>SEXY POTION</h4>
-                    <div class="tarjeta-texto">
-                        <p>6 x $16.000</p>
-                    </div>
-                </div>
-                <div class="contenedor">
-                    <span class="carrito">
-                        <i class="fas fa-cart-plus"></i>
-                    </span>
                 </div>
             </div>
             <!--Tajerta #3-->
             <div class="tarjeta">
-                <img class="tarjeta-image" src="../../static/placeholder-3.jpg">
+                <div class="marco-imagen">
+                    <img class="tarjeta-image" src="../../static/placeholder-3.jpg">
+                </div>
                 <div class="tarjeta-contenido">
                     <h4>VALQUIRIA</h4>
-                    <div class="tarjeta-texto">
-                        <p>1 x $8.000</p>
-                    </div>
                 </div>
+            </div>
             </div>
         </div>
     </div>
@@ -93,7 +86,9 @@ export default {
 .cabecera{
     background: rgb(91,107,147);
     background: radial-gradient(circle, rgba(91,107,147,1) 0%, rgba(163,36,89,1) 100%);
-    margin: 10px;
+    background: rgb(60,60,60);
+    background: radial-gradient(circle, rgba(60,60,60,1) 0%, rgba(0,0,0,1) 100%);
+    margin: 10px 0px 15px 0px;
     padding: 60px 0px 40px 0px;
     text-align: center;
 }
@@ -132,10 +127,10 @@ export default {
     margin-left: auto;
     margin-right: auto;
     height: 100px;
-    width: 500px;
+    width: 840px; 
     background-color: #fe3a80;
     z-index: 1;
-    opacity: .5;
+    opacity: 1;
     filter: blur(40px);
 }
 
@@ -144,24 +139,32 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    margin: 10px;
+    width: 100%;
+}
+
+.contenedor-tarjeta{
     display: flex;
-    vertical-align: -webkit-baseline-middle;
-    
+    width: 75%;
+    margin: auto;
 }
 
 .tarjeta{
-    background: rgb(112,101,125);
-    background: linear-gradient(0deg, rgba(112,101,125,1) 0%, rgba(25,25,27,1) 60%, rgba(0,0,0,1) 100%);
-    border-radius: 3.5%;
-    margin: 1.5% 3%;
+    background: rgb(130,129,129);
+    background: linear-gradient(0deg, rgba(130,129,129,1) 0%, rgba(80,78,78,1) 50%, rgba(0,0,0,1) 100%);
+    width: 33%;
+    height: 100%;
+    margin: 1.5% 1%;
     padding: 1%;
     padding-bottom: 0.5%;
-    width: 27%;
-    height: 100%;
     display: block;
     color:#999;
-    
+}
+
+.marco-imagen{
+    background: radial-gradient(circle, rgba(114,202,203,1) 55%, rgba(247,48,140,1) 100%);
+    margin: 0;
+    padding: 1px 2px 1px 2px;
+    border-radius: 5px;
 }
 
 .tarjeta-image{
@@ -172,17 +175,27 @@ export default {
 }
 
 .tarjeta-contenido{
-    background-color:  rgba(91,107,147,1);
-    margin: 2.5%;
-    width: 95%;
-    padding: 3%;
+    background-image: url('../../static/madera.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    margin: 10px 0px 15px 0px;
+    padding: 2.5%;
     text-align: center;
+    display: block;
 }
 
-.tarjeta-texto p{
-    margin-right: 20px;
+.tarjeta-contenido h4{
+    width: 95%;
+    font-weight: 600;
+    font-size: 250%;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 20px#ff689f;
 }
 
+/*
 .contenedor{
     position: absolute;
     width: 60px;
@@ -209,4 +222,7 @@ export default {
     text-transform: uppercase;
     font-size: 40px;
 } 
+
+background: rgb(238,174,202);
+background: linear-gradient(45deg, rgba(238,174,202,1) 0%, rgba(255,104,159,1) 100%);*/
 </style>
