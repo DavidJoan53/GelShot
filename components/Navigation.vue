@@ -16,7 +16,7 @@
                 <a class="nav-link"><nuxt-link to="/gomas" style="text-decoration: none; color: inherit;">Gomitas</nuxt-link></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"><nuxt-link to="/gel" style="text-decoration: none; color: inherit;" >Gelatinas</nuxt-link></a>
+                <a class="nav-link"><nuxt-link to="/gelatinas" style="text-decoration: none; color: inherit;" >Gelatinas</nuxt-link></a>
               </li>
             </ul>
 
