@@ -2,7 +2,7 @@
     <div class="Fondo">
         <Navigation/>
         <div class="cabecera">
-            <h1 class="neon" data-text="[GOMITAS_GELSHOT]">[GOMITAS_GELSHOT]</h1>
+            <h1 class="neon-gomitas" data-text="[GOMITAS_GELSHOT]">[GOMITAS_GELSHOT]</h1>
         </div>
 
         <div class="cuerpo">
@@ -93,7 +93,7 @@ export default {
     text-align: center;
 }
 
-.neon{
+.neon-gomitas{
     font-size: 500%;
     font-weight: 400;
     margin: 0px;
@@ -102,7 +102,7 @@ export default {
     text-shadow: 0 0 20px#ff689f;
 }
 
-.neon:after{
+.neon-gomitas:after{
     position: absolute;
     content: attr(data-text);
     top: 0;
@@ -116,7 +116,7 @@ export default {
     filter: blur(15px);
 }
 
-.neon:before{
+.neon-gomitas:before{
     position: absolute;
     content: '';
     top: 0;
