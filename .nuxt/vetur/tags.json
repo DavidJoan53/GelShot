@@ -1,4 +1,16 @@
 {
+  "Cards": {
+    "description": "Auto imported from components/Cards.vue"
+  },
+  "LazyCards": {
+    "description": "Auto imported from components/Cards.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "LazyHeader": {
+    "description": "Auto imported from components/Header.vue"
+  },
   "Navigation": {
     "description": "Auto imported from components/Navigation.vue"
   },

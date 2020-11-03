@@ -3,11 +3,11 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _f93d7614 = () => interopDefault(import('..\\pages\\gelatinas\\index.vue' /* webpackChunkName: "pages/gelatinas/index" */))
-const _72915c92 = () => interopDefault(import('..\\pages\\gomas\\index.vue' /* webpackChunkName: "pages/gomas/index" */))
-const _39595868 = () => interopDefault(import('..\\pages\\gelatinas\\detalles.vue' /* webpackChunkName: "pages/gelatinas/detalles" */))
-const _340f8807 = () => interopDefault(import('..\\pages\\gomas\\detalles.vue' /* webpackChunkName: "pages/gomas/detalles" */))
-const _1c648f74 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _8d63311e = () => interopDefault(import('../pages/gelatinas/index.vue' /* webpackChunkName: "pages/gelatinas/index" */))
+const _1c9a7f90 = () => interopDefault(import('../pages/gomas/index.vue' /* webpackChunkName: "pages/gomas/index" */))
+const _a00e3fe6 = () => interopDefault(import('../pages/gelatinas/detalles.vue' /* webpackChunkName: "pages/gelatinas/detalles" */))
+const _0423df8e = () => interopDefault(import('../pages/gomas/detalles.vue' /* webpackChunkName: "pages/gomas/detalles" */))
+const _7f130ab0 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -27,23 +27,23 @@ export const routerOptions = {
 
   routes: [{
     path: "/gelatinas",
-    component: _f93d7614,
+    component: _8d63311e,
     name: "gelatinas"
   }, {
     path: "/gomas",
-    component: _72915c92,
+    component: _1c9a7f90,
     name: "gomas"
   }, {
     path: "/gelatinas/detalles",
-    component: _39595868,
+    component: _a00e3fe6,
     name: "gelatinas-detalles"
   }, {
     path: "/gomas/detalles",
-    component: _340f8807,
+    component: _0423df8e,
     name: "gomas-detalles"
   }, {
     path: "/",
-    component: _1c648f74,
+    component: _7f130ab0,
     name: "index"
   }],
 

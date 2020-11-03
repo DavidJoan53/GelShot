@@ -2,31 +2,36 @@
   {
     "name": "gelatinas",
     "path": "/gelatinas",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gelatinas\\\\index.vue",
-    "chunkName": "pages/gelatinas/index"
+    "component": "/home/kevin/Documents/GitHub/GelShot/pages/gelatinas/index.vue",
+    "chunkName": "pages/gelatinas/index",
+    "_name": "_8d63311e"
   },
   {
     "name": "gomas",
     "path": "/gomas",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gomas\\\\index.vue",
-    "chunkName": "pages/gomas/index"
+    "component": "/home/kevin/Documents/GitHub/GelShot/pages/gomas/index.vue",
+    "chunkName": "pages/gomas/index",
+    "_name": "_1c9a7f90"
   },
   {
     "name": "gelatinas-detalles",
     "path": "/gelatinas/detalles",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gelatinas\\\\detalles.vue",
-    "chunkName": "pages/gelatinas/detalles"
+    "component": "/home/kevin/Documents/GitHub/GelShot/pages/gelatinas/detalles.vue",
+    "chunkName": "pages/gelatinas/detalles",
+    "_name": "_a00e3fe6"
   },
   {
     "name": "gomas-detalles",
     "path": "/gomas/detalles",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gomas\\\\detalles.vue",
-    "chunkName": "pages/gomas/detalles"
+    "component": "/home/kevin/Documents/GitHub/GelShot/pages/gomas/detalles.vue",
+    "chunkName": "pages/gomas/detalles",
+    "_name": "_0423df8e"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "component": "/home/kevin/Documents/GitHub/GelShot/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_7f130ab0"
   }
 ]

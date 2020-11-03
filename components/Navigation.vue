@@ -89,7 +89,7 @@ header {
 header .navbar-brand {
   text-transform: uppercase;
   letter-spacing: .2em;
-  font-weight: 400;
+  font-weight: 450;
 }
 
 header .navbar-brand.absolute {

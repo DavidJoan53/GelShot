@@ -1,9 +1,9 @@
 <template>
-    <div class="Fondo">
+    <div>
         <Navigation/>
-        <div class="cabecera">
-            <h1 class="neon-gelatinas" data-text="[GELATINAS_GELSHOT]">[GELATINAS_GELSHOT]</h1>
-        </div>
+        <Header/>
+      
+       
 
         <div class="cuerpo">
             <div class="cuerpo-contenedor">
@@ -23,9 +23,10 @@
 
 <script>
 import Navigation from '../components/Navigation'
+import Header from '../components/Header'
 export default {
     components:{
-        Navigation
+        Navigation,Header
     }
 }
 </script>>
@@ -55,18 +56,11 @@ export default {
 @import url(//db.onlinewebfonts.com/c/75e0d53f56082617fd6b32e4d1e1a3bc?family=Rama+Gothic);
 
 .Fondo{
-    background-color: black;
+
     padding-top: 130px;
     font-family: 'Quicksand', sans-serif;
 }
 
-.cabecera{
-    background: rgb(60,60,60);
-    background: radial-gradient(circle, rgba(60,60,60,1) 0%, rgba(0,0,0,1) 100%);
-    margin: 10px 0px 15px 0px;
-    padding: 60px 0px 40px 0px;
-    text-align: center;
-}
 
 .neon-gelatinas{
     font-size: 500%;
