@@ -1,7 +1,7 @@
 <template>
   <div>
     
-    
+    <Navigation/>
     <Header/>
 
   </div>
@@ -9,7 +9,7 @@
 
 <script>
 
-import Navagation from '../components/Navigation'
+import Navigation from '../components/Navigation'
 export default {
   components:{
     Navigation,Header
