@@ -2,31 +2,43 @@
   {
     "name": "gelatinas",
     "path": "/gelatinas",
-    "component": "C:\\\\Users\\\\esther\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gelatinas\\\\index.vue",
+    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gelatinas\\\\index.vue",
     "chunkName": "pages/gelatinas/index"
   },
   {
     "name": "gomas",
     "path": "/gomas",
-    "component": "C:\\\\Users\\\\esther\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gomas\\\\index.vue",
+    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gomas\\\\index.vue",
     "chunkName": "pages/gomas/index"
+  },
+  {
+    "name": "pagos",
+    "path": "/pagos",
+    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\pagos\\\\index.vue",
+    "chunkName": "pages/pagos/index"
   },
   {
     "name": "gelatinas-detalles",
     "path": "/gelatinas/detalles",
-    "component": "C:\\\\Users\\\\esther\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gelatinas\\\\detalles.vue",
+    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gelatinas\\\\detalles.vue",
     "chunkName": "pages/gelatinas/detalles"
   },
   {
     "name": "gomas-detalles",
     "path": "/gomas/detalles",
-    "component": "C:\\\\Users\\\\esther\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gomas\\\\detalles.vue",
+    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gomas\\\\detalles.vue",
     "chunkName": "pages/gomas/detalles"
+  },
+  {
+    "name": "pagos-detalles",
+    "path": "/pagos/detalles",
+    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\pagos\\\\detalles.vue",
+    "chunkName": "pages/pagos/detalles"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\esther\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\index.vue",
     "chunkName": "pages/index"
   }
 ]
