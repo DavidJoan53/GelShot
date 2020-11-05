@@ -54,7 +54,7 @@
 
 
 <!--      <nuxt-link to="/gomas">hola</nuxt-link>   -->
-<style>
+<style scoped>
 
 .ion-2x:before {
   
@@ -72,9 +72,16 @@
 /* Header */
 
 header {
-
+  content: "";
   position: absolute;
-  top: 30px;
+  top: 0;
+  height: 500px;
+  width: 100%;
+  background: black;
+  background: linear-gradient(to bottom, black 0%, rgba(145, 232, 66, 0) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#91e842', GradientType=0 );
+  position: absolute;
+
   left: 0;
   width: 100%;
   z-index: 5;
@@ -89,7 +96,7 @@ header {
 header .navbar-brand {
   text-transform: uppercase;
   letter-spacing: .2em;
-  font-weight: 450;
+  font-weight: 400;
 }
 
 header .navbar-brand.absolute {
@@ -112,6 +119,7 @@ header .navbar {
   background: none !important;
   position: relative;
   font-family: "Montserrat", sans-serif;
+
 }
 
 @media (max-width: 1199.98px) {

@@ -10,7 +10,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 .slider-item {
   background-image: url('../static/gomasTres.png');
@@ -22,19 +22,6 @@ export default {
   position: relative;
 }
 
-.slider-item:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 500px;
-  width: 100%;
-  background: black;
- 
- 
-  
-  background: linear-gradient(to bottom, black 0%, rgba(145, 232, 66, 0) 50%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#91e842', GradientType=0 );
-}
 
 .slider-item .slider-text {
   color: #fff;

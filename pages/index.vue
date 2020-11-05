@@ -1,17 +1,15 @@
 <template>
   <div>
     
-    <Navigation/>
+    
     <Header/>
-  
-
 
   </div>
 </template>
 
 <script>
-import Navigation from '../components/Navigation'
-import Header from '../components/Header'
+
+import Navagation from '../components/Navigation'
 export default {
   components:{
     Navigation,Header
