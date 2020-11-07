@@ -60,7 +60,7 @@
 
 
 <!--      <nuxt-link to="/gomas">hola</nuxt-link>   -->
-<style scoped>
+<style >
 
 .ion-2x:before {
   

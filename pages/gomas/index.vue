@@ -35,7 +35,10 @@
 					        </ul>
 
 					        <div class="row">
-					            
+					                <Pruebas/>
+                                    <Pruebas/>
+                                    <PruebasDos/>
+                                    <PruebasDos/>
 					                <Cards/>
                                     <Cards/>
 					                <Cards/>
@@ -60,10 +63,12 @@
 import Navigation from '../components/Navigation'
 import Header from '../components/Header'
 import Cards from '../components/Cards'
+import Pruebas from '../components/Pruebas'
+import PruebasDos from '../components/PruebasDos'
 
 export default {
     components:{
-        Navigation,Header,Cards
+        Navigation,Header,Cards,Pruebas,PruebasDos
         }
 }
 </script>>

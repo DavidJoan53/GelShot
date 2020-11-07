@@ -8,7 +8,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style >
 
 .slider-item {
   background-image: url('../static/gomasTres.png');
