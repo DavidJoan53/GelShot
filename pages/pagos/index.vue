@@ -1,7 +1,31 @@
 <template>
 <div>
     <Navigation/>
-    <div class="top_decoration">
+	        <div class="st-content-inner">
+   
+    <section class="page-header-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="page-header">
+								  <h1>Catalogo</h1>
+								</div>
+								<ol class="breadcrumb">
+								  <li><a href="#">Inicio</a></li>
+                                  <li class="active">ㅤ/ㅤ</li>
+								  <li><a href="#">Catalogo</a></li>
+                                  <li class="active">ㅤ/ㅤ</li>
+								  <li class="active">Gomitas</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+	</section>
+
+              <div class="container">
+					<div class="content-wrapper">
+						<div class="inner-content">
+					        <div class="top_decoration">
             <div class="rectangulo"></div>
         </div>
     <div class="container_exterior">
@@ -48,7 +72,17 @@
             <button class="form_button">Confirmar</button>
         </div>
     </div>
-</div>          
+						</div>
+					</div>
+				</div>
+           </div>
+        </div>
+    
+
+    
+    
+    
+         
 </template>
 
 <script>

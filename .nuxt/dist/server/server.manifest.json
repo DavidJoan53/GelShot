@@ -1,0 +1,23 @@
+{
+  "entry": "server.js",
+  "files": {
+    "pages/gelatinas/detalles.js": "pages/gelatinas/detalles.js",
+    "pages/gelatinas/index.js": "pages/gelatinas/index.js",
+    "pages/gomas/detalles.js": "pages/gomas/detalles.js",
+    "pages/gomas/index.js": "pages/gomas/index.js",
+    "pages/index.js": "pages/index.js",
+    "pages/pagos/detalles.js": "pages/pagos/detalles.js",
+    "pages/pagos/index.js": "pages/pagos/index.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "pages/gelatinas/detalles.js": "pages/gelatinas/detalles.js.map",
+    "pages/gelatinas/index.js": "pages/gelatinas/index.js.map",
+    "pages/gomas/detalles.js": "pages/gomas/detalles.js.map",
+    "pages/gomas/index.js": "pages/gomas/index.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/pagos/detalles.js": "pages/pagos/detalles.js.map",
+    "pages/pagos/index.js": "pages/pagos/index.js.map",
+    "server.js": "server.js.map"
+  }
+}

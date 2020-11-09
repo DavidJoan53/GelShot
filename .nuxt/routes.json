@@ -2,50 +2,50 @@
   {
     "name": "gelatinas",
     "path": "/gelatinas",
-    "component": "/home/kevin/Documents/GitHub/GelShot/pages/gelatinas/index.vue",
+    "component": "C:\\\\Users\\\\esther\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gelatinas\\\\index.vue",
     "chunkName": "pages/gelatinas/index",
-    "_name": "_8d63311e"
+    "_name": "_14ef7f02"
   },
   {
     "name": "gomas",
     "path": "/gomas",
-    "component": "/home/kevin/Documents/GitHub/GelShot/pages/gomas/index.vue",
+    "component": "C:\\\\Users\\\\esther\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gomas\\\\index.vue",
     "chunkName": "pages/gomas/index",
-    "_name": "_1c9a7f90"
+    "_name": "_62b379c0"
   },
   {
     "name": "pagos",
     "path": "/pagos",
-    "component": "/home/kevin/Documents/GitHub/GelShot/pages/pagos/index.vue",
+    "component": "C:\\\\Users\\\\esther\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\pagos\\\\index.vue",
     "chunkName": "pages/pagos/index",
-    "_name": "_8055cd5a"
+    "_name": "_26cc185d"
   },
   {
     "name": "gelatinas-detalles",
     "path": "/gelatinas/detalles",
-    "component": "/home/kevin/Documents/GitHub/GelShot/pages/gelatinas/detalles.vue",
+    "component": "C:\\\\Users\\\\esther\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gelatinas\\\\detalles.vue",
     "chunkName": "pages/gelatinas/detalles",
-    "_name": "_a00e3fe6"
+    "_name": "_3fcac43f"
   },
   {
     "name": "gomas-detalles",
     "path": "/gomas/detalles",
-    "component": "/home/kevin/Documents/GitHub/GelShot/pages/gomas/detalles.vue",
+    "component": "C:\\\\Users\\\\esther\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gomas\\\\detalles.vue",
     "chunkName": "pages/gomas/detalles",
-    "_name": "_0423df8e"
+    "_name": "_58c6775e"
   },
   {
     "name": "pagos-detalles",
     "path": "/pagos/detalles",
-    "component": "/home/kevin/Documents/GitHub/GelShot/pages/pagos/detalles.vue",
+    "component": "C:\\\\Users\\\\esther\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\pagos\\\\detalles.vue",
     "chunkName": "pages/pagos/detalles",
-    "_name": "_248f4aeb"
+    "_name": "_45c877a1"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/home/kevin/Documents/GitHub/GelShot/pages/index.vue",
+    "component": "C:\\\\Users\\\\esther\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_7f130ab0"
+    "_name": "_0410985d"
   }
 ]
