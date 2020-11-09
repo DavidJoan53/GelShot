@@ -1,25 +1,19 @@
 <template>
-  <div id="container">	
+  <div id="containerCard">	
 	
 <!-- Start	Product details -->
 	<div class="product-details">
 		
 		<!-- 	Product Name -->
-	<h1>Biru Putaran</h1>
+	<h1>GuataUva</h1>
 <!-- 		<span class="hint new">New</span> -->
 <!-- 		<span class="hint free-shipping">Free Shipping</span> -->
 <!-- 		the Product rating -->
-	<span class="hint-star star">
-		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star-half-o" aria-hidden="true"></i>
-		<i class="fa fa-star-o" aria-hidden="true"></i>
-	</span>
+	
 		
 	
 <!-- The most important information about the product -->
-		<p class="information">" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
+		<p class="information">Traido de donde traen las mejores uvas de la legion uvera</p>
 
 		
 		
@@ -29,11 +23,11 @@
 <!-- Start Button buying -->
 	<button class="btn">
 <!-- 		the Price -->
-	 <span class="price">49 $</span>
+	 <span class="price">15.000 x6 $</span>
 <!-- 		shopping cart icon-->
    <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
 <!-- 		Buy Now / ADD to Cart-->
-   <span class="buy">Buy Now</span>
+   <span class="buy">Comprar</span>
  </button>
 	<!-- End Button buying -->
 	
@@ -49,7 +43,7 @@
 	
 <div class="product-image">
 	
-	<img src="../static/GelatinaNaranja.jpg" alt="">
+	<img src="../static/pruebas/recortado.png" alt="">
 	
 <!-- 	product Information-->
 <div class="info">
@@ -84,15 +78,16 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Abel|Aguafina+Script|Artifika|Athiti|Condiment|Dosis|Droid+Serif|Farsan|Gurajada|Josefin+Sans|Lato|Lora|Merriweather|Noto+Serif|Open+Sans+Condensed:300|Playfair+Display|Rasa|Sahitya|Share+Tech|Text+Me+One|Titillium+Web');
 
 
-#container{
+#containerCard{
 	box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
 	background: rgba(255, 255, 255, 0.90);
 	text-align: center;
 	border-radius: 5px;
 	overflow: hidden;
-	margin: 5em auto;
-	height: 350px;
-	width: 700px;
+    margin-left: 1rem;
+	height: 19rem;
+	width: 30rem;
+	margin-bottom: 2rem;
 	
 }
 

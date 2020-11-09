@@ -22,11 +22,5 @@
   },
   "LazyPruebas": {
     "description": "Auto imported from components/Pruebas.vue"
-  },
-  "PruebasDos": {
-    "description": "Auto imported from components/PruebasDos.vue"
-  },
-  "LazyPruebasDos": {
-    "description": "Auto imported from components/PruebasDos.vue"
   }
 }
