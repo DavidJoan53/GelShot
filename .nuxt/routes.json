@@ -21,6 +21,13 @@
     "_name": "_26cc185d"
   },
   {
+    "name": "prueba",
+    "path": "/prueba",
+    "component": "C:\\\\Users\\\\esther\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\prueba\\\\index.vue",
+    "chunkName": "pages/prueba/index",
+    "_name": "_f647ed28"
+  },
+  {
     "name": "gelatinas-detalles",
     "path": "/gelatinas/detalles",
     "component": "C:\\\\Users\\\\esther\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gelatinas\\\\detalles.vue",
