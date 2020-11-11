@@ -39,7 +39,7 @@
 
       <!-- 	product Information-->
       <div class="info">
-        <h2>Ingredientes</h2>
+
         <ul>
           <li><strong>Vodka</strong></li>
           <li><strong>Gelatina de uva</strong></li>
@@ -228,6 +228,8 @@ export default {};
 
 .info ul li {
   transition: 0.3s ease;
+  font-size: 1.3rem;
+  margin-top: 2rem;
 }
 .info ul li:hover {
   transform: translateX(50px) scale(1.3);
@@ -264,5 +266,86 @@ export default {};
     font-size: 0.6rem;
     margin: 0;
 }
+}
+
+@media (max-width: 550px) {
+.imagen{
+    width: 8rem;
+	margin-top: 3rem;
+
+
+
+}
+.titulo{
+	font-size: 1.3rem;
+}
+
+.btn span {
+    font-family: "Farsan", cursive;
+    transition: transform 0.3s;
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 0.6rem;
+    margin: 0;
+}
+.information{
+  font-size: 0.6rem;
+  width: 8.5rem;
+}
+
+.info{
+  transform: translateX(-200%);
+}
+
+#containerCard {
+  height : 15rem;
+  margin-left: 0;
+}
+
+.product-image{
+  width: 40%;
+}
+
+.product-details {
+  width: 60%;
+}
+
+.info ul li {
+  font-size: 1rem;
+  margin-top: 1.3rem;
+}
+
+
 }	
+
+
+@media (max-width: 400px) {
+  .imagen{
+    width: 5rem;
+	margin-top: 6rem;
+	margin-left: 1rem;
+
+
+}
+.btn span {
+    font-family: "Farsan", cursive;
+    transition: transform 0.3s;
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 0.6rem;
+    margin: 0;
+}
+.info{
+  background: rgba(255, 255, 255, 0.9);
+  height: 0%;
+  width: 0%;
+
+  font-size: 1px;
+
+}
+
+.info ul li{
+  font-size: 0rem;
+}
+}
 </style>
