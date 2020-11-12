@@ -1,261 +1,320 @@
 <template>
-<div>
-    <Navigation/>
-	        <div class="st-content-inner">
-   
-    <section class="page-header-wrapper">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="page-header">
-								  <h1>Catalogo</h1>
-								</div>
-								<ol class="breadcrumb">
-								  <li><a href="#">Inicio</a></li>
-                                  <li class="active">ㅤ/ㅤ</li>
-								  <li><a href="#">Catalogo</a></li>
-                                  <li class="active">ㅤ/ㅤ</li>
-								  <li class="active">Gomitas</li>
-								</ol>
-							</div>
-						</div>
-					</div>
-	</section>
-
-              <div class="container">
-					<div class="content-wrapper">
-						<div class="inner-content">
-					        <div class="top_decoration">
-            <div class="rectangulo"></div>
-        </div>
-    <div class="container_exterior">
-        <div class="pagos_h2_div">
-            <h2 class="pagos_h2">Formulario de compra</h2>
-        </div>
-        <div class="container_pagos">
-            <div class="form_content">
-                <div class="form_unidad">
-                    <h3>Nombre completo:</h3>
-                    <input class="input_gran" type="text">
-                </div>
-                <div class="form_unidad">
-                    <h3>Correo electrónico:</h3>
-                    <input class="input_gran" type="text">
-                </div>
-                <div class="form_unidad">
-                    <h3>Número de celular:</h3>
-                    <input class="input_med" type="text">
-                </div>
-                <div class="form_unidad">
-                    <h3>Dirección:</h3>
-                    <input class="input_gran" type="text">
-                    <p>Residencia</p>
-                    <input class="input_peq" type="text">
-                    <p>Ciudad</p>
-                </div>
-                <div class="form_unidad">
-                    <h3>Total a pagar:</h3>
-                    <p>$20.000</p>
-                </div>
-                <div class="form_unidad">
-                    <h3>Método de pago:</h3>
-                </div>
-                <div class="selector_metodo">
-                    <input type="radio" id="nequi" name="metodo" value="nequi">
-                    <label class="logo_metodo nequi" for="nequi"></label>
-                    <input type="radio" id="davivienda" name="metodo" value="davivienda">
-                    <label class="logo_metodo davivienda" for="davivienda"></label>
-                    <input type="radio" id="contraentrega" name="metodo" value="contraentrega">
-                    <label class="logo_metodo contraentrega" for="contraentrega"></label>
-                </div>
+  <div>
+    <header class="pago_header">
+      <div> 
+        <h1 class="p_bold_title">GELSHOT</h1>
+        <h1 class="p_title">Finalizar compra</h1>
+        <span class="p_retorno"><a href="/gomas">Volver a la tienda</a></span>
+      </div>
+    </header>
+    <div class="pago_contenido">
+      <div class="p_formulario">
+        <!--DATOS A RELLENAR-->
+        <h2>1 Datos de envío</h2>
+        <form class="form-group, p_form">
+          <div class="f_item">
+            <label class="f_label" for="name">*Nombre</label>
+            <input type="text" /><br />
+          </div>
+          <div class="f_item">
+            <label class="f_label" for="lname">*Apellido</label>
+            <input type="text" /><br />
+          </div>
+          <div class="f_item">
+            <label class="f_label" for="phone">*Número de celular</label>
+            <input type="text" /><br />
+          </div>
+          <div class="f_item">
+            <label class="f_label" for="email">*Correo electrónico</label>
+            <input type="email" /><br />
+          </div>
+          <div class="f_location_item">
+            <div class="location_instance">
+              <label class="f_label" for="city">*Ciudad</label>
+              <input type="text" />
             </div>
-            <button class="form_button">Confirmar</button>
-        </div>
-    </div>
-						</div>
-					</div>
-				</div>
-           </div>
-        </div>
-    
 
-    
-    
-    
-         
+            <div class="f_space"></div>
+
+            <div class="location_instance">
+              <label class="f_label" for="address">*Dirección</label>
+              <input type="text" /><br />
+            </div>
+          </div>
+          <!--MÉTODO DE PAGO-->
+          <h2>2 Método de pago</h2>
+          <div class="selector_metodo">
+            <input type="radio" id="nequi" name="metodo" value="nequi" />
+            <label class="logo_metodo nequi" for="nequi"></label>
+            <input
+              type="radio"
+              id="davivienda"
+              name="metodo"
+              value="davivienda"
+            />
+            <label class="logo_metodo davivienda" for="davivienda"></label>
+            <input
+              type="radio"
+              id="contraentrega"
+              name="metodo"
+              value="contraentrega"
+            />
+            <label
+              class="logo_metodo contraentrega"
+              for="contraentrega"
+            ></label>
+          </div>
+        </form>
+        <!--BOTÓN-->
+        <button type="type" class="btn btn-primary, f_button">Confirmar</button>
+      </div>
+      <!--CARRITO DE COMPRAS-->
+      <div class="p_carrito">
+          <div class="c_productos">
+              <h3>Resumen del pedido</h3>
+              <TinyCards/>
+          </div>
+          <div>
+              
+          </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import Navigation from '../components/Navigation'
+import TinyCards from "../components/TinyCards";
 
 export default {
-    components:{
-        Navigation
-        }
-}
+  components: {
+    TinyCards,
+  },
+};
 </script>>
 
 <script>
 export default {
-    head(){
-        return{
-        title: "Catálogo - Gomas",
-        meta: [
-            {
-                hid: "descripcion",
-                name: "descripcion",
-                content: "En esta página se muestra el menú de gomas gelshot disponibles"
-            }
-        ],
-        htmlAttrs: {
-            lang: 'es'
-        }
-        }
-    } 
-}
+  head() {
+    return {
+      title: "Catálogo - Gomas",
+      meta: [
+        {
+          hid: "descripcion",
+          name: "descripcion",
+          content:
+            "En esta página se muestra el menú de gomas gelshot disponibles",
+        },
+      ],
+      htmlAttrs: {
+        lang: "es",
+      },
+    };
+  },
+};
 </script>>
 
 
 <style>
-.container_exterior{
-    background-color:#5ba8db;
-    margin: 0% auto 0 auto;
-    padding: 3% 2.5% 2% 2.5%;
-    width: 35%;
+.pago_header {
+  background: none;
+  border-bottom: 1px #999 solid;
+  height: 25%;
 }
 
-.top_decoration{
-    background-color: grey;
-    margin: 8% auto 0 auto;
-    width: 35%;
-    height: 2%;
+.pago_header div {
+  margin: 5% 24% 0 24%;
+  display: flex;
+}
+
+.p_retorno{
     display: flex;
+    margin-left: auto;
 }
 
-.rectangulo{
-    background-color: white;
-    width: 50%;
-    height: 8px;
-    margin: 8px 0 8px 25%;
-    border-radius: 2px;
+.p_retorno a{
+    color: black;
 }
 
-.container_pagos{
-    background-color: whitesmoke;
-    margin: 0 auto;
-    padding-top: 7%;
-    width: 100%;
+.p_bold_title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  padding-right: 3%;
+  color: #2a4057;
 }
 
-.pagos_h2_div{
-    background-color:#8eccf5;
-    padding: 5% 5% 0.5% 5%;
-    border-radius: 20px 20px 0 0;
+.p_title {
+  font-weight: 300;
+  font-size: 200%;
+  color: #999;
 }
 
-.pagos_h2{
-    text-align: center;
-    font-weight: 700;
-    font-size: 240%;
-    color: #3098dd;
+.pago_contenido {
+  max-width: 955px;
+  width: 100%;
+  margin: 2% auto;
+  display: flex;
 }
 
-.form_content{
-    padding-left: 8%;
+/*FORMULARIO*/
+.p_formulario {
+  width: 50%;
+  margin-right: auto;
 }
 
-.form_unidad{
-    padding-bottom: 2.5%;
+.p_formulario h2 {
+  font-weight: 500;
+  font-size: 28px;
+  color: #242424;
 }
 
-.form_unidad h3{
-    font-weight: 500;
+.f_item {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-.form_unidad p{
-    font-size: 120%;
+.f_label {
+  font-size: 120%;
 }
 
-.input_gran{
-    width: 60%;
+.f_item input {
+  width: 100%;
+  height: 40px;
 }
 
-.input_med{
-    width: 45%;
+.f_location_item {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
 }
 
-.input_peq{
-    width: 30%;
+.f_space {
+  width: 6%;
 }
 
-/*MÉTODOS DE PAGO*/
-.selector_metodo{
-    width: 89.48%;
-    display: flex;
+.location_instance {
+  width: 47%;
 }
 
-.selector_metodo input{
-    margin:0;padding:0;
-    -webkit-appearance:none;
-       -moz-appearance:none;
-            appearance:none;
+.location_instance input {
+  width: 100%;
+  height: 40px;
+}
+/*BOTÓN*/
+.f_button {
+  position: relative;
+  background-color: black;
+  margin: 5% 0;
+  width: 100%;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  color: whitesmoke;
+  border: 3px solid #ff0044;
+  border-radius: 4px;
+  outline: none;
+  transition: ease-out 0.3s;
+  z-index: 1;
 }
 
-.nequi{background-image: url('../../static/nequi.png');}
-.davivienda{background-image: url('../../static/davivienda.png');}
-.contraentrega{background-image: url('../../static/contraentrega.png');}
-
-.selector_metodo input:active +.logo_metodo{opacity: .9;}
-
-.selector_metodo input:checked +.logo_metodo{
-    -webkit-filter: none;
-       -moz-filter: none;
-            filter: none;
+.f_button:hover{
+    background-color: #fff;
+    color: black;
+    font-size: 20;
 }
 
-.logo_metodo{
-    cursor: pointer;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 80px; height: 80px;
-    -webkit-transition: all 100ms ease-in;
-       -moz-transition: all 100ms ease-in;
-            transition: all 100ms ease-in;
-    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
-       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
-            filter: brightness(1.8) grayscale(1) opacity(.7);
+.f_button::before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #ff0044;
 }
 
-.logo_metodo:hover{
-    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
-       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
-            filter: brightness(1.2) grayscale(.5) opacity(.9);
+.f_button:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
 }
 
-/*BOTÓN DEL FORMULARIO*/
-
-.form_button{
-    background-color: #2E962A;
-    margin: 12% 30% 8% 30%;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-    font-size: 150%;
-    width: 40%;
-    height: 40px;
-    text-align: center;
-    color: whitesmoke;
-    border-radius: 14px;
-    border: none;
-    transition: 0.15;
-}
-
-.form_button:focus{
+.f_button:focus{
     outline: none;
 }
 
-.form_button:active{
-    background-color: #275C29;
-    transition: 0.2s;
+/*MÉTODOS DE PAGO*/
+.selector_metodo {
+  width: 89.48%;
+  display: flex;
+}
+
+.selector_metodo input {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.nequi {
+  background-image: url("../../static/nequi.png");
+}
+.davivienda {
+  background-image: url("../../static/davivienda.png");
+}
+.contraentrega {
+  background-image: url("../../static/contraentrega.png");
+}
+
+.selector_metodo input:active + .logo_metodo {
+  opacity: 0.9;
+}
+
+.selector_metodo input:checked + .logo_metodo {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+}
+
+.logo_metodo {
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  -webkit-filter: brightness(1.8) grayscale(1) opacity(0.7);
+  -moz-filter: brightness(1.8) grayscale(1) opacity(0.7);
+  filter: brightness(1.8) grayscale(1) opacity(0.7);
+}
+
+.logo_metodo:hover {
+  -webkit-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  -moz-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+}
+
+/*CARRITO DE COMPRAS*/
+.p_carrito {
+  width: 42%;
+  background-color: rgb(212, 212, 212);
+  margin: 0 auto;
+}
+
+.c_productos{
+    width: 84%;
+    margin: 12px auto;
+}
+
+.c_productos h3{
+    font-weight: 300;
+    font-size: 20px;
 }
 </style>

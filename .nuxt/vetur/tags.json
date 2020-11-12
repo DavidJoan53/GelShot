@@ -22,5 +22,11 @@
   },
   "LazyPruebas": {
     "description": "Auto imported from components/Pruebas.vue"
+  },
+  "TinyCards": {
+    "description": "Auto imported from components/TinyCards.vue"
+  },
+  "LazyTinyCards": {
+    "description": "Auto imported from components/TinyCards.vue"
   }
 }

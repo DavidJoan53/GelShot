@@ -82,6 +82,9 @@
     color:#fff;
 }
 
+.iconos_header:focus{
+  color: #fff;
+}
 
 header {
   content: "";

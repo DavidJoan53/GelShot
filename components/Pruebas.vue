@@ -41,8 +41,8 @@
       <div class="info">
 
         <ul>
-          <li><strong>Vodka</strong></li>
-          <li><strong>Gelatina de uva</strong></li>
+          <li>Vodka</li>
+          <li>Gelatina de uva</li>
         </ul>
       </div>
     </div>
@@ -55,6 +55,10 @@ export default {};
 </script>
 
 <style>
+*{
+  font-family: 'Quicksand', sans-serif;
+}
+
 .titulo{
 	font-size: 2.3rem;
 }
@@ -100,7 +104,7 @@ export default {};
   right: 0%;
   top: 0%;
   transform: translate(25px, -15px);
-  font-family: "Farsan", cursive;
+  /*font-family: "Farsan", cursive;*/
   display: inline-block;
   background: #ffa69e;
   border-radius: 5px;
@@ -142,7 +146,7 @@ export default {};
 }
 
 .btn span {
-  font-family: "Farsan", cursive;
+  /*font-family: "Farsan", cursive;*/
   transition: transform 0.3s;
   display: inline-block;
   padding: 10px 20px;
@@ -153,6 +157,7 @@ export default {};
 .btn .price,
 .shopping-cart {
   background: #333;
+  color: whitesmoke;
   border: 0;
   margin: 0;
 }
@@ -160,6 +165,7 @@ export default {};
 .btn .price {
   transform: translateX(-10%);
   padding-right: 15px;
+  font-weight: 500;
 }
 
 /* the Icon */
@@ -204,7 +210,7 @@ export default {};
 
 .info {
   background: rgba(27, 26, 26, 0.9);
-  font-family: "Farsan", cursive;
+  /*font-family: "Farsan", cursive;*/
   transition: all 0.3s ease-out;
   transform: translateX(-130%);
   position: absolute;
@@ -259,7 +265,7 @@ export default {};
 }
 
 .btn span {
-    font-family: "Farsan", cursive;
+    /*font-family: "Farsan", cursive;*/
     transition: transform 0.3s;
     display: inline-block;
     padding: 10px 20px;
@@ -281,7 +287,7 @@ export default {};
 }
 
 .btn span {
-    font-family: "Farsan", cursive;
+    /*font-family: "Farsan", cursive;*/
     transition: transform 0.3s;
     display: inline-block;
     padding: 7px 10px;
@@ -328,7 +334,7 @@ export default {};
 
 }
 .btn span {
-    font-family: "Farsan", cursive;
+    /*font-family: "Farsan", cursive;*/
     transition: transform 0.3s;
     display: inline-block;
     padding: 7px 10px;

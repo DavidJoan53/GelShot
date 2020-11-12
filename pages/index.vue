@@ -54,7 +54,6 @@ export default {
   margin: 15% 0 0 5%;
   padding: 3% 0 1% 3%;
   width: 36.5%;
-  /*background-image: url('../static/fondo_madera.jpg');*/
 }
 
 .informacion_h1{
