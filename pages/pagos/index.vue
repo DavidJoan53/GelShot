@@ -73,6 +73,12 @@
           <div class="c_productos">
               <h3>Resumen del pedido</h3>
               <TinyCards/>
+              <TinyCards/>
+              <TinyCards/>
+              <div class="container-total">
+                <div class="total-title">Total: </div>
+                <div class="total-number">$45,000</div>
+              </div>
           </div>
           <div>
               
@@ -304,7 +310,8 @@ export default {
 /*CARRITO DE COMPRAS*/
 .p_carrito {
   width: 42%;
-  background-color: rgb(212, 212, 212);
+  max-height: 800px;
+  background-color: rgb(238, 238, 238);
   margin: 0 auto;
 }
 
@@ -316,5 +323,24 @@ export default {
 .c_productos h3{
     font-weight: 300;
     font-size: 20px;
+}
+
+.container-total{
+  margin-top: 20%;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #999
+}
+
+.total-title{
+  width: 50%;
+  font-size: 24px;
+  font-weight: 500;
+}
+.total-number{
+  width: 50%;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 500;
 }
 </style>
