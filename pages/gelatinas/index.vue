@@ -47,6 +47,7 @@
                                     <Cards/>
 					            
 					        </div>
+                            <a href="/pagos">Pagos</a>
 						</div>
 					</div>
 				</div>

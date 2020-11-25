@@ -34,12 +34,16 @@
 
 					        </ul>
 
-					        <div class="row">
+					        <div class="row barra">
 					                <Pruebas/>
                                     <Pruebas/>
-
-					            
+                                    <Pruebas/>
+                                    <Pruebas/>
+                                    <Pruebas/>
 					        </div>
+                            <div class="redic_pagos">
+                                <a href="/pagos" class="redic_boton">Finalizar compra</a>
+                            </div>
 						</div>
 					</div>
 				</div>
@@ -95,8 +99,6 @@ export default {
 
 <style>
 
-
-
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -105,8 +107,45 @@ body {
     background: #f7f7f7;
     color: #6d6d6d;
     -webkit-font-smoothing: antialiased !important;
+    overflow: hidden;
 }
 
+.barra{
+    overflow: auto;
+    height: 40vh;
+}
+
+.barra::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px;  
+}
+
+.barra::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 4px;
+}
+
+.barra::-webkit-scrollbar-thumb:hover {
+    background: #000;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.barra::-webkit-scrollbar-thumb:active {
+    background-color: #000;
+}
+
+.redic_pagos{
+    margin-top: 3%;
+    background-color: black;
+    height: 5vh;
+    display: flex;
+}
+
+.redic_boton{
+    margin: auto;
+    font-weight: 500;
+    font-size: 200%;
+}
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 15px;

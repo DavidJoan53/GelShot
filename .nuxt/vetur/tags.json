@@ -17,6 +17,12 @@
   "LazyNavigation": {
     "description": "Auto imported from components/Navigation.vue"
   },
+  "Product": {
+    "description": "Auto imported from components/Product.vue"
+  },
+  "LazyProduct": {
+    "description": "Auto imported from components/Product.vue"
+  },
   "Pruebas": {
     "description": "Auto imported from components/Pruebas.vue"
   },

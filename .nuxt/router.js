@@ -3,10 +3,12 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _2302f242 = () => interopDefault(import('..\\pages\\admin\\index.vue' /* webpackChunkName: "pages/admin/index" */))
 const _f93d7614 = () => interopDefault(import('..\\pages\\gelatinas\\index.vue' /* webpackChunkName: "pages/gelatinas/index" */))
 const _72915c92 = () => interopDefault(import('..\\pages\\gomas\\index.vue' /* webpackChunkName: "pages/gomas/index" */))
 const _ea601f58 = () => interopDefault(import('..\\pages\\pagos\\index.vue' /* webpackChunkName: "pages/pagos/index" */))
 const _bd599f56 = () => interopDefault(import('..\\pages\\prueba\\index.vue' /* webpackChunkName: "pages/prueba/index" */))
+const _3b1261df = () => interopDefault(import('..\\pages\\admin\\detalles.vue' /* webpackChunkName: "pages/admin/detalles" */))
 const _39595868 = () => interopDefault(import('..\\pages\\gelatinas\\detalles.vue' /* webpackChunkName: "pages/gelatinas/detalles" */))
 const _340f8807 = () => interopDefault(import('..\\pages\\gomas\\detalles.vue' /* webpackChunkName: "pages/gomas/detalles" */))
 const _2111884a = () => interopDefault(import('..\\pages\\pagos\\detalles.vue' /* webpackChunkName: "pages/pagos/detalles" */))
@@ -29,6 +31,10 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/admin",
+    component: _2302f242,
+    name: "admin"
+  }, {
     path: "/gelatinas",
     component: _f93d7614,
     name: "gelatinas"
@@ -44,6 +50,10 @@ export const routerOptions = {
     path: "/prueba",
     component: _bd599f56,
     name: "prueba"
+  }, {
+    path: "/admin/detalles",
+    component: _3b1261df,
+    name: "admin-detalles"
   }, {
     path: "/gelatinas/detalles",
     component: _39595868,

@@ -4,7 +4,7 @@
       <div> 
         <h1 class="p_bold_title">GELSHOT</h1>
         <h1 class="p_title">Finalizar compra</h1>
-        <span class="p_retorno"><a href="/gomas">Volver a la tienda</a></span>
+        <span class="p_retorno"><a href="javascript: history.go(-1)">Volver a la tienda</a></span>
       </div>
     </header>
     <div class="pago_contenido">
@@ -318,6 +318,26 @@ export default {
 .c_productos{
     width: 84%;
     margin: 12px auto;
+}
+
+
+.barra::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px;  
+}
+
+.barra::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 4px;
+}
+
+.barra::-webkit-scrollbar-thumb:hover {
+    background: #000;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.barra::-webkit-scrollbar-thumb:active {
+    background-color: #000;
 }
 
 .c_productos h3{
