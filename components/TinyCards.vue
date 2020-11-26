@@ -1,6 +1,6 @@
 <template>
     <div class="tc-container">
-        <img class="tc-img" src="../static/gomas.jpeg">
+        <img class="tc-img" src="../static/pruebas/recortado.png">
         <div class="tc-content">
             <h1 class="cont">GuataUva:</h1>
             <h1 class="cont3">Cantidad:</h1>

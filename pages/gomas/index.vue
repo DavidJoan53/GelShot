@@ -33,22 +33,49 @@
 					            <li><a >Ron</a></li>
 
 					        </ul>
-
-					        <div class="row barra">
-					                <Pruebas/>
-                                    <Pruebas/>
-                                    <Pruebas/>
-                                    <Pruebas/>
-                                    <Pruebas/>
-					        </div>
-                            <div class="redic_pagos">
-                                <a href="/pagos" class="redic_boton">Finalizar compra</a>
+                        <div style="display:block;padding-bottom:3rem">
+                                <a href="/pagos" class="btn  btn-outline-secondary" >Finalizar compra</a>
                             </div>
+					        <div class="row ">
+					                <Pruebas data-toggle="modal" data-target="#modalPush" />
+                                    <Pruebas data-toggle="modal" data-target="#modalPush" />
+                                    <Pruebas data-toggle="modal" data-target="#modalPush" />
+                                    <Pruebas data-toggle="modal" data-target="#modalPush"/>
+                                    <Pruebas data-toggle="modal" data-target="#modalPush"/>
+					        </div>
+
 						</div>
 					</div>
 				</div>
            </div>
-        </div>
+
+           <div class="modal fade" id="modalPush" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-info" role="document">
+    <!--Content-->
+    <div class="modal-content text-center">
+     
+
+      <!--Body-->
+      <div class="modal-body">
+
+        <i class="fas fa-bell fa-4x animated rotateIn mb-4"></i>
+
+        <p>¿Quieres seguir comprando?</p>
+
+      </div>
+
+      <!--Footer-->
+<div class="modal-footer flex-center m-auto">
+        <a href="" class="btn  btn-outline-secondary"  data-dismiss="modal">Seguir comprando</a>
+        <a href="/pagos" class="btn  btn-outline-secondary" >Terminar compra</a>
+      </div>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+        
     
           
 </template>
@@ -95,6 +122,9 @@ export default {
     background-size: cover;
 }
 
+
+
+
 </style>
 
 <style>
@@ -107,12 +137,13 @@ body {
     background: #f7f7f7;
     color: #6d6d6d;
     -webkit-font-smoothing: antialiased !important;
-    overflow: hidden;
+
+    
 }
 
 .barra{
-    overflow: auto;
-    height: 40vh;
+ 
+    height: 50vh;
 }
 
 .barra::-webkit-scrollbar {
@@ -291,7 +322,7 @@ BREADCRUMB esto aun no me funciona
 }
 #filter li a:hover,
 #filter li a.active {
-    background: #fe7402;
+    background: #333;
     border: 2px solid transparent;
     color: #fff;
 }

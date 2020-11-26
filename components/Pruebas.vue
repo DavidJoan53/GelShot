@@ -129,20 +129,15 @@ export default {};
 .btn {
   transform: translateY(0px);
   transition: 0.3s linear;
-  background: #fe7402;
+
   border-radius: 5px;
   position: relative;
   overflow: hidden;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  color: #eee;
-  padding: 0;
-  margin: 0;
+ 
 }
 
 .btn:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 }
 
 .btn span {
@@ -170,7 +165,7 @@ export default {};
 
 /* the Icon */
 .btn .shopping-cart {
-  transform: translateX(-100%);
+  transform: translateX(-120%);
   position: absolute;
   background: #333;
   z-index: 1;

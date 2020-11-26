@@ -23,8 +23,8 @@
             </ul>
 
             <div class="navbar-nav ml-auto">
-             <a class="iconos_header" target="_blank"   href="https://www.instagram.com/gel.shot/"> <i class="ion-social-instagram-outline ion-2x"></i> </a>
-             <a class="iconos_header" target="_blank"  href="https://www.facebook.com/Gelshot-585313455478794"> <i class="ion-social-facebook-outline ion-2x"></i> </a>
+             <a class="iconos_header" target="_blank"   href="https://www.instagram.com/gel.shot/"> <i class="fab fa-instagram"></i> </a>
+             <a class="iconos_header" target="_blank"  href="https://www.facebook.com/Gelshot-585313455478794"> <i class="fab fa-facebook-square"></i> </a>
 <!--
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="classes.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Redes sociales</a>
@@ -67,6 +67,9 @@
   font-size: 2.3rem; /* esto es para los iconos xD*/
 }
 
+.fab:before {
+  font-size: 1.8rem
+}
 .iconos_header{
     padding-left: 1.4rem ;
     color:#999;

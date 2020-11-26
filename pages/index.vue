@@ -43,24 +43,39 @@ export default {
 }
 </script>
 
+<style scoped>
+body{
+  overflow: hidden;
+}
+</style>
 
 <style>
+
 *{
   font-family: 'Quicksand', sans-serif;
 }
 
+
+
+@media (min-width: 1000px){
 .principal{
   position: absolute;
   background-image: url('../static/gomasTres.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: calc(100vh);
-  min-height: 700px;
+  height: 100%;
   width: 100%;
 }
+}
+.principal{
+  position: absolute;
+  background-image: url('../static/gomasTres.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 
-
+}
 .informacion{
   position: relative;
   margin: 15% 0 0 5%;
