@@ -3,20 +3,20 @@
     <!-- Start	Product details -->
     <div class="product-details">
       <!-- 	Product Name -->
-      <h1 class="titulo">GuataUva</h1>
+      <h1 class="titulo">{{ name }}</h1>
       <!-- 		<span class="hint new">New</span> -->
       <!-- 		<span class="hint free-shipping">Free Shipping</span> -->
       <!-- 		the Product rating -->
 
       <!-- The most important information about the product -->
       <p class="information">
-        Traido de donde traen las mejores uvas de la legion uvera deliciosisimo 
+        {{ description }}
       </p>
 
       <!-- 		Control -->
       <div class="control">
         <!-- Start Button buying -->
-        <button class="btn">
+        <button class="btn" @click="addToCar(id)">
           <!-- 		the Price -->
           <span class="price">15.000$ x6</span>
           <!-- 		shopping cart icon-->
@@ -35,13 +35,12 @@
     <!-- 	Start product image & Information -->
 
     <div class="product-image">
-      <img class="imagen" src="../static/pruebas/recortado.png" alt="" />
+      <img class="imagen" :src="photo" alt="" />
 
       <!-- 	product Information-->
       <div class="info">
-
         <ul>
-          <li>Vodka</li>
+          <li>vodka</li>
           <li>Gelatina de uva</li>
         </ul>
       </div>
@@ -51,19 +50,28 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "prueba",
+  props: ["id", "name", "description", "photo"],
+  methods: {
+    async addToCar(id) {
+      const product = await this.$axios.$post("/products/", { id });
+      sessionStorage.setItem("product", JSON.stringify(product));
+      this.$store.dispatch("sendProduct");
+    },
+  },
+};
 </script>
 
 <style>
-*{
-  font-family: 'Quicksand', sans-serif;
+* {
+  font-family: "Quicksand", sans-serif;
 }
 
-.titulo{
-	font-size: 2.3rem;
+.titulo {
+  font-size: 2.3rem;
 }
 /* fonts  */
-
 
 #containerCard {
   box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
@@ -124,7 +132,6 @@ export default {};
   }
 }
 
-
 /* the Button */
 .btn {
   transform: translateY(0px);
@@ -133,7 +140,6 @@ export default {};
   border-radius: 5px;
   position: relative;
   overflow: hidden;
- 
 }
 
 .btn:hover {
@@ -243,110 +249,98 @@ export default {};
   transform: scale(1.1, 1.1);
 }
 
-.imagen{
-    width: 15rem;
-
+.imagen {
+  width: 15rem;
 }
 @media (max-width: 800.98px) {
-.imagen{
+  .imagen {
     width: 12rem;
-	margin-top: 3rem;
-	margin-left: 1rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+  }
+  .titulo {
+    font-size: 1.8rem;
+  }
 
-
-}
-.titulo{
-	font-size: 1.8rem;
-}
-
-.btn span {
+  .btn span {
     /*font-family: "Farsan", cursive;*/
     transition: transform 0.3s;
     display: inline-block;
     padding: 10px 20px;
     font-size: 0.6rem;
     margin: 0;
-}
+  }
 }
 
 @media (max-width: 550px) {
-.imagen{
+  .imagen {
     width: 8rem;
-	margin-top: 3rem;
+    margin-top: 3rem;
+  }
+  .titulo {
+    font-size: 1.3rem;
+  }
 
-
-
-}
-.titulo{
-	font-size: 1.3rem;
-}
-
-.btn span {
+  .btn span {
     /*font-family: "Farsan", cursive;*/
     transition: transform 0.3s;
     display: inline-block;
     padding: 7px 10px;
     font-size: 0.6rem;
     margin: 0;
+  }
+  .information {
+    font-size: 0.6rem;
+    width: 8.5rem;
+  }
+
+  .info {
+    transform: translateX(-200%);
+  }
+
+  #containerCard {
+    height: 15rem;
+    margin-left: 0;
+  }
+
+  .product-image {
+    width: 40%;
+  }
+
+  .product-details {
+    width: 60%;
+  }
+
+  .info ul li {
+    font-size: 1rem;
+    margin-top: 1.3rem;
+  }
 }
-.information{
-  font-size: 0.6rem;
-  width: 8.5rem;
-}
-
-.info{
-  transform: translateX(-200%);
-}
-
-#containerCard {
-  height : 15rem;
-  margin-left: 0;
-}
-
-.product-image{
-  width: 40%;
-}
-
-.product-details {
-  width: 60%;
-}
-
-.info ul li {
-  font-size: 1rem;
-  margin-top: 1.3rem;
-}
-
-
-}	
-
 
 @media (max-width: 400px) {
-  .imagen{
+  .imagen {
     width: 5rem;
-	margin-top: 6rem;
-	margin-left: 1rem;
-
-
-}
-.btn span {
+    margin-top: 6rem;
+    margin-left: 1rem;
+  }
+  .btn span {
     /*font-family: "Farsan", cursive;*/
     transition: transform 0.3s;
     display: inline-block;
     padding: 7px 10px;
     font-size: 0.6rem;
     margin: 0;
-}
-.info{
-  background: rgba(255, 255, 255, 0.9);
-  height: 0%;
-  width: 0%;
+  }
+  .info {
+    background: rgba(255, 255, 255, 0.9);
+    height: 0%;
+    width: 0%;
 
-  font-size: 1px;
+    font-size: 1px;
+  }
 
-}
-
-.info ul li{
-  font-size: 0rem;
-}
+  .info ul li {
+    font-size: 0rem;
+  }
 }
 </style>

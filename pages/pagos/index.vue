@@ -1,10 +1,12 @@
 <template>
   <div>
     <header class="pago_header">
-      <div> 
+      <div>
         <h1 class="p_bold_title">GELSHOT</h1>
         <h1 class="p_title">Finalizar compra</h1>
-        <span class="p_retorno"><a href="javascript: history.go(-1)">Volver a la tienda</a></span>
+        <span class="p_retorno"
+          ><a href="javascript: history.go(-1)">Volver a la tienda</a></span
+        >
       </div>
     </header>
     <div class="pago_contenido">
@@ -14,31 +16,31 @@
         <form class="form-group, p_form">
           <div class="f_item">
             <label class="f_label" for="name">*Nombre</label>
-            <input type="text" /><br />
+            <input v-model="customer.name" type="text" /><br />
           </div>
           <div class="f_item">
             <label class="f_label" for="lname">*Apellido</label>
-            <input type="text" /><br />
+            <input v-model="customer.lastname" type="text" /><br />
           </div>
           <div class="f_item">
             <label class="f_label" for="phone">*Número de celular</label>
-            <input type="text" /><br />
+            <input v-model="customer.number" type="text" /><br />
           </div>
           <div class="f_item">
             <label class="f_label" for="email">*Correo electrónico</label>
-            <input type="email" /><br />
+            <input v-model="customer.email" type="email" /><br />
           </div>
           <div class="f_location_item">
             <div class="location_instance">
               <label class="f_label" for="city">*Ciudad</label>
-              <input type="text" />
+              <input v-model="customer.city" type="text" />
             </div>
 
             <div class="f_space"></div>
 
             <div class="location_instance">
               <label class="f_label" for="address">*Dirección</label>
-              <input type="text" /><br />
+              <input v-model="customer.address" type="text" /><br />
             </div>
           </div>
           <!--MÉTODO DE PAGO-->
@@ -66,58 +68,90 @@
           </div>
         </form>
         <!--BOTÓN-->
-        <button type="type" class="btn btn-primary, f_button">Confirmar</button>
+        <button
+          @click="sendOrder"
+          type="type"
+          class="btn btn-primary, f_button"
+        >
+          Confirmar
+        </button>
       </div>
       <!--CARRITO DE COMPRAS-->
       <div class="p_carrito">
-          <div class="c_productos">
-              <h3>Resumen del pedido</h3>
-              <TinyCards/>
-              <TinyCards/>
-              <TinyCards/>
-              <div class="container-total">
-                <div class="total-title">Total: </div>
-                <div class="total-number">$45,000</div>
-              </div>
+        <div class="c_productos">
+          <h3>Resumen del pedido</h3>
+          <div v-for="product in products" :key="product._id">
+            <TinyCards
+              :id="product._id"
+              :name="product.name"
+              :price="product.price"
+              :photo="product.photo"
+            />
           </div>
-          <div>
-              
+          <div class="container-total">
+            <div class="total-title">Total:</div>
+            <div class="total-number">{{ getTotal }}</div>
           </div>
+        </div>
+        <div></div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import TinyCards from "../components/TinyCards";
+import TinyCards from "@/components/TinyCards";
 
 export default {
+
+  data: () => ({
+    products: [],
+    customer: {},
+  }),
+  async created() {
+    this.products = this.getOrder.products;
+  },
+  methods: {
+    async sendOrder() {
+      try {
+        const client = await this.$axios.$post("/customer", this.customer);
+        const email = await this.$axios.$post("/orders", {
+          products: this.products,
+          total: this.getTotal,
+          customer: client._id,
+        });
+      } catch (error) {
+        console.log(error);
+      }
+    },
+  },
+  computed: {
+    getOrder() {
+      return this.$store.getters["getOrder"];
+    },
+    getTotal() {
+      return this.$store.getters["getTotal"];
+    },
+  },
   components: {
     TinyCards,
   },
-};
-</script>>
-
-<script>
-export default {
-  head() {
-    return {
-      title: "Catálogo - Gomas",
-      meta: [
-        {
-          hid: "descripcion",
-          name: "descripcion",
-          content:
-            "En esta página se muestra el menú de gomas gelshot disponibles",
-        },
-      ],
-      htmlAttrs: {
-        lang: "es",
+  head: {
+    title: "Catálogo - Gomas",
+    meta: [
+      {
+        hid: "descripcion",
+        name: "descripcion",
+        content:
+          "En esta página se muestra el menú de gomas gelshot disponibles",
       },
-    };
+    ],
+    htmlAttrs: {
+      lang: "es",
+    },
   },
 };
-</script>>
+</script>
 
 
 <style>
@@ -132,13 +166,13 @@ export default {
   display: flex;
 }
 
-.p_retorno{
-    display: flex;
-    margin-left: auto;
+.p_retorno {
+  display: flex;
+  margin-left: auto;
 }
 
-.p_retorno a{
-    color: black;
+.p_retorno a {
+  color: black;
 }
 
 .p_bold_title {
@@ -222,34 +256,34 @@ export default {
   z-index: 1;
 }
 
-.f_button:hover{
-    background-color: #fff;
-    color: black;
-    font-size: 20;
+.f_button:hover {
+  background-color: #fff;
+  color: black;
+  font-size: 20;
 }
 
 .f_button::before {
-    transition: 0.5s all ease;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    opacity: 0;
-    content: "";
-    background-color: #ff0044;
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #ff0044;
 }
 
 .f_button:hover:before {
-    transition: 0.5s all ease;
-    left: 0;
-    right: 0;
-    opacity: 1;
-    z-index: -1;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
 }
 
-.f_button:focus{
-    outline: none;
+.f_button:focus {
+  outline: none;
 }
 
 /*MÉTODOS DE PAGO*/
@@ -315,49 +349,48 @@ export default {
   margin: 0 auto;
 }
 
-.c_productos{
-    width: 84%;
-    margin: 12px auto;
+.c_productos {
+  width: 84%;
+  margin: 12px auto;
 }
 
-
 .barra::-webkit-scrollbar {
-    width: 8px; 
-    height: 8px;  
+  width: 8px;
+  height: 8px;
 }
 
 .barra::-webkit-scrollbar-thumb {
-    background: #000;
-    border-radius: 4px;
+  background: #000;
+  border-radius: 4px;
 }
 
 .barra::-webkit-scrollbar-thumb:hover {
-    background: #000;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  background: #000;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .barra::-webkit-scrollbar-thumb:active {
-    background-color: #000;
+  background-color: #000;
 }
 
-.c_productos h3{
-    font-weight: 300;
-    font-size: 20px;
+.c_productos h3 {
+  font-weight: 300;
+  font-size: 20px;
 }
 
-.container-total{
+.container-total {
   margin-top: 20%;
   width: 100%;
   display: flex;
-  border-bottom: 1px solid #999
+  border-bottom: 1px solid #999;
 }
 
-.total-title{
+.total-title {
   width: 50%;
   font-size: 24px;
   font-weight: 500;
 }
-.total-number{
+.total-number {
   width: 50%;
   text-align: right;
   font-size: 20px;
