@@ -43,7 +43,7 @@
               <input v-model="customer.address" type="text" /><br />
             </div>
           </div>
-          <!--MÉTODO DE PAGO-->
+          <!--MÉTODO DE PAGO
           <h2>2 Método de pago</h2>
           <div class="selector_metodo">
             <input type="radio" id="nequi" name="metodo" value="nequi" />
@@ -65,7 +65,7 @@
               class="logo_metodo contraentrega"
               for="contraentrega"
             ></label>
-          </div>
+          </div>-->
         </form>
         <!--BOTÓN-->
         <button

@@ -9,6 +9,7 @@
       <h1 class="cont2">${{ price }}</h1>
       <h1 class="cont3">x6</h1>
     </div>
+    <div><input type="button" value="X" class="close">X</div>
   </div>
 </template>
 
@@ -53,6 +54,7 @@ export default {
   width: 20%;
   font-size: 16px;
   font-weight: 300;
+  padding-right: 5px;
 }
 
 .eliminar {
@@ -60,5 +62,17 @@ export default {
   background-color: #c90a00;
   border-radius: 50%;
   width: 30%;
+}
+
+.close{
+  background-color: red;
+  line-height: 12px;
+  width: 18px;
+  font-size: 8pt;
+  font-family: tahoma;
+  margin: 1px 2px 4px 0;
+  position:absolute;
+  top:0;
+  right:0;  
 }
 </style>

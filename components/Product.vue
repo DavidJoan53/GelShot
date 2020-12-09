@@ -21,6 +21,14 @@
             <label for="">Sabor</label>
             <input type="text" class="input_cont input_p" placeholder="Púrpura" />
           </div>
+          <div class="div_input">
+            <label for="">Licor</label>
+            <input type="text" class="input_cont input_p" placeholder="Ron" />
+          </div>
+          <div class="div_input">
+            <label for="">Descripción</label>
+            <input type="text" class="input_cont input_p" placeholder="Descripción" />
+          </div>
         </div>
       </div>
 
