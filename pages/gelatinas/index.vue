@@ -25,11 +25,11 @@
         <div class="content-wrapper">
           <div class="inner-content">
             <ul class="list-inline" id="filter">
-              <li>
-                <a @click="getProducts()" class="active">Todas las bebidas</a>
+              <li  @click="getProducts()">
+                <a :class="{'active': selected === 'todas'}" @click="selected = 'todas'">Todas las bebidas</a>
               </li>
-              <li><a @click="productsByType('vodka')">Vodka</a></li>
-              <li><a @click="productsByType('brandy')">Brandy</a></li>
+              <li @click="productsByType('vodka')" ><a :class="{'active': selected === 'vodka'}" @click="selected = 'vodka'" >Vodka</a></li>
+              <li @click="productsByType('brandy')"><a :class="{'active': selected === 'brandy'}" @click="selected = 'brandy'">Brandy</a></li>
             </ul>
             <div style="display: block; padding-bottom: 3rem">
               <nuxt-link to="/pagos" class="btn btn-outline-secondary"
@@ -43,6 +43,8 @@
                   :name="product.name"
                   :description="product.description"
                   :photo="product.photo"
+                  data-toggle="modal" 
+                  data-target="#modalPush"
                 />
               </div>
             </div>
@@ -66,16 +68,16 @@
           <div class="modal-body">
             <i class="fas fa-bell fa-4x animated rotateIn mb-4"></i>
 
-            <p>¿Quieres seguir comprando?</p>
+            <p>¿Desea añadir al carrito?</p>
           </div>
 
           <!--Footer-->
           <div class="modal-footer flex-center m-auto">
             <a href="" class="btn btn-outline-secondary" data-dismiss="modal"
-              >Seguir comprando</a
+              >Si</a
             >
-            <a href="/pagos" class="btn btn-outline-secondary"
-              >Terminar compra</a
+            <a class="btn btn-outline-secondary"
+              >No</a
             >
           </div>
         </div>
@@ -92,8 +94,10 @@ import Cards from "@/components/Cards";
 import Pruebas from "@/components/Pruebas";
 
 export default {
+  el: '#filter',
   data: () => ({
     products: [],
+    selected:'todas',
   }),
   async created() {
     this.getProducts();

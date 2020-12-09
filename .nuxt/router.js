@@ -3,16 +3,16 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _d44c5902 = () => interopDefault(import('../pages/admin/index.vue' /* webpackChunkName: "pages/admin/index" */))
-const _12d15208 = () => interopDefault(import('../pages/gelatinas/index.vue' /* webpackChunkName: "pages/gelatinas/index" */))
-const _10704da7 = () => interopDefault(import('../pages/gomas/index.vue' /* webpackChunkName: "pages/gomas/index" */))
-const _98aa312c = () => interopDefault(import('../pages/pagos/index.vue' /* webpackChunkName: "pages/pagos/index" */))
-const _58d0f712 = () => interopDefault(import('../pages/prueba/index.vue' /* webpackChunkName: "pages/prueba/index" */))
-const _96a75d82 = () => interopDefault(import('../pages/admin/detalles.vue' /* webpackChunkName: "pages/admin/detalles" */))
-const _39da5a16 = () => interopDefault(import('../pages/gelatinas/detalles.vue' /* webpackChunkName: "pages/gelatinas/detalles" */))
-const _61ddc617 = () => interopDefault(import('../pages/gomas/detalles.vue' /* webpackChunkName: "pages/gomas/detalles" */))
-const _fb6d9d18 = () => interopDefault(import('../pages/pagos/detalles.vue' /* webpackChunkName: "pages/pagos/detalles" */))
-const _03ea65ff = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _eb0aa230 = () => interopDefault(import('..\\pages\\admin\\index.vue' /* webpackChunkName: "pages/admin/index" */))
+const _14ef7f02 = () => interopDefault(import('..\\pages\\gelatinas\\index.vue' /* webpackChunkName: "pages/gelatinas/index" */))
+const _62b379c0 = () => interopDefault(import('..\\pages\\gomas\\index.vue' /* webpackChunkName: "pages/gomas/index" */))
+const _26cc185d = () => interopDefault(import('..\\pages\\pagos\\index.vue' /* webpackChunkName: "pages/pagos/index" */))
+const _f647ed28 = () => interopDefault(import('..\\pages\\prueba\\index.vue' /* webpackChunkName: "pages/prueba/index" */))
+const _5fc95136 = () => interopDefault(import('..\\pages\\admin\\detalles.vue' /* webpackChunkName: "pages/admin/detalles" */))
+const _3fcac43f = () => interopDefault(import('..\\pages\\gelatinas\\detalles.vue' /* webpackChunkName: "pages/gelatinas/detalles" */))
+const _58c6775e = () => interopDefault(import('..\\pages\\gomas\\detalles.vue' /* webpackChunkName: "pages/gomas/detalles" */))
+const _45c877a1 = () => interopDefault(import('..\\pages\\pagos\\detalles.vue' /* webpackChunkName: "pages/pagos/detalles" */))
+const _0410985d = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -32,43 +32,43 @@ export const routerOptions = {
 
   routes: [{
     path: "/admin",
-    component: _d44c5902,
+    component: _eb0aa230,
     name: "admin"
   }, {
     path: "/gelatinas",
-    component: _12d15208,
+    component: _14ef7f02,
     name: "gelatinas"
   }, {
     path: "/gomas",
-    component: _10704da7,
+    component: _62b379c0,
     name: "gomas"
   }, {
     path: "/pagos",
-    component: _98aa312c,
+    component: _26cc185d,
     name: "pagos"
   }, {
     path: "/prueba",
-    component: _58d0f712,
+    component: _f647ed28,
     name: "prueba"
   }, {
     path: "/admin/detalles",
-    component: _96a75d82,
+    component: _5fc95136,
     name: "admin-detalles"
   }, {
     path: "/gelatinas/detalles",
-    component: _39da5a16,
+    component: _3fcac43f,
     name: "gelatinas-detalles"
   }, {
     path: "/gomas/detalles",
-    component: _61ddc617,
+    component: _58c6775e,
     name: "gomas-detalles"
   }, {
     path: "/pagos/detalles",
-    component: _fb6d9d18,
+    component: _45c877a1,
     name: "pagos-detalles"
   }, {
     path: "/",
-    component: _03ea65ff,
+    component: _0410985d,
     name: "index"
   }],
 
