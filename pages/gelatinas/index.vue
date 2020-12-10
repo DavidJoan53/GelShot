@@ -25,15 +25,31 @@
         <div class="content-wrapper">
           <div class="inner-content">
             <ul class="list-inline" id="filter">
-              <li  @click="getProducts()">
-                <a :class="{'active': selected === 'todas'}" @click="selected = 'todas'">Todas las bebidas</a>
+              <li @click="getProducts()">
+                <a
+                  :class="{ active: selected === 'todas' }"
+                  @click="selected = 'todas'"
+                  >Todas las bebidas</a
+                >
               </li>
-              <li @click="productsByType('vodka')" ><a :class="{'active': selected === 'vodka'}" @click="selected = 'vodka'" >Vodka</a></li>
-              <li @click="productsByType('brandy')"><a :class="{'active': selected === 'brandy'}" @click="selected = 'brandy'">Brandy</a></li>
+              <li @click="productsByType('vodka')">
+                <a
+                  :class="{ active: selected === 'vodka' }"
+                  @click="selected = 'vodka'"
+                  >Vodka</a
+                >
+              </li>
+              <li @click="productsByType('brandy')">
+                <a
+                  :class="{ active: selected === 'brandy' }"
+                  @click="selected = 'brandy'"
+                  >Brandy</a
+                >
+              </li>
             </ul>
             <div style="display: block; padding-bottom: 3rem">
-              <nuxt-link to="/pagos" class="btn btn-outline-secondary"
-                >Finalizar compra</nuxt-link
+              <a href="/pagos" class="btn btn-outline-secondary"
+                >Finalizar compra</a
               >
             </div>
             <div class="row">
@@ -43,7 +59,7 @@
                   :name="product.name"
                   :description="product.description"
                   :photo="product.photo"
-                  data-toggle="modal" 
+                  data-toggle="modal"
                   data-target="#modalPush"
                 />
               </div>
@@ -76,9 +92,7 @@
             <a href="" class="btn btn-outline-secondary" data-dismiss="modal"
               >Si</a
             >
-            <a class="btn btn-outline-secondary"
-              >No</a
-            >
+            <a class="btn btn-outline-secondary">No</a>
           </div>
         </div>
       </div>
@@ -94,10 +108,10 @@ import Cards from "@/components/Cards";
 import Pruebas from "@/components/Pruebas";
 
 export default {
-  el: '#filter',
+  el: "#filter",
   data: () => ({
     products: [],
-    selected:'todas',
+    selected: "todas",
   }),
   async created() {
     this.getProducts();

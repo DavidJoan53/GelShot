@@ -33,8 +33,8 @@
               <li @click="productsByType('whisky')"><a :class="{'active': selected === 'whisky'}" @click="selected = 'whisky'">Whisky</a ></li>
             </ul>
             <div style="display: block; padding-bottom: 3rem">
-              <nuxt-link to="/pagos" class="btn btn-outline-secondary"
-                >Finalizar compra</nuxt-link
+              <a href="/pagos" class="btn btn-outline-secondary"
+                >Finalizar compra</a
               >
             </div>
             <div class="row">

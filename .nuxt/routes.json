@@ -2,61 +2,71 @@
   {
     "name": "admin",
     "path": "/admin",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\admin\\\\index.vue",
-    "chunkName": "pages/admin/index"
+    "component": "/home/mattweb/Desktop/GelShot/pages/admin/index.vue",
+    "chunkName": "pages/admin/index",
+    "_name": "_d44c5902"
   },
   {
     "name": "gelatinas",
     "path": "/gelatinas",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gelatinas\\\\index.vue",
-    "chunkName": "pages/gelatinas/index"
+    "component": "/home/mattweb/Desktop/GelShot/pages/gelatinas/index.vue",
+    "chunkName": "pages/gelatinas/index",
+    "_name": "_12d15208"
   },
   {
     "name": "gomas",
     "path": "/gomas",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gomas\\\\index.vue",
-    "chunkName": "pages/gomas/index"
+    "component": "/home/mattweb/Desktop/GelShot/pages/gomas/index.vue",
+    "chunkName": "pages/gomas/index",
+    "_name": "_10704da7"
   },
   {
     "name": "pagos",
     "path": "/pagos",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\pagos\\\\index.vue",
-    "chunkName": "pages/pagos/index"
+    "component": "/home/mattweb/Desktop/GelShot/pages/pagos/index.vue",
+    "chunkName": "pages/pagos/index",
+    "_name": "_98aa312c"
   },
   {
     "name": "prueba",
     "path": "/prueba",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\prueba\\\\index.vue",
-    "chunkName": "pages/prueba/index"
+    "component": "/home/mattweb/Desktop/GelShot/pages/prueba/index.vue",
+    "chunkName": "pages/prueba/index",
+    "_name": "_58d0f712"
   },
   {
     "name": "admin-detalles",
     "path": "/admin/detalles",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\admin\\\\detalles.vue",
-    "chunkName": "pages/admin/detalles"
+    "component": "/home/mattweb/Desktop/GelShot/pages/admin/detalles.vue",
+    "chunkName": "pages/admin/detalles",
+    "_name": "_96a75d82"
   },
   {
     "name": "gelatinas-detalles",
     "path": "/gelatinas/detalles",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gelatinas\\\\detalles.vue",
-    "chunkName": "pages/gelatinas/detalles"
+    "component": "/home/mattweb/Desktop/GelShot/pages/gelatinas/detalles.vue",
+    "chunkName": "pages/gelatinas/detalles",
+    "_name": "_39da5a16"
   },
   {
     "name": "gomas-detalles",
     "path": "/gomas/detalles",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\gomas\\\\detalles.vue",
-    "chunkName": "pages/gomas/detalles"
+    "component": "/home/mattweb/Desktop/GelShot/pages/gomas/detalles.vue",
+    "chunkName": "pages/gomas/detalles",
+    "_name": "_61ddc617"
   },
   {
     "name": "pagos-detalles",
     "path": "/pagos/detalles",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\pagos\\\\detalles.vue",
-    "chunkName": "pages/pagos/detalles"
+    "component": "/home/mattweb/Desktop/GelShot/pages/pagos/detalles.vue",
+    "chunkName": "pages/pagos/detalles",
+    "_name": "_fb6d9d18"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\Usuario\\\\Documents\\\\GitHub\\\\GelShot\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "component": "/home/mattweb/Desktop/GelShot/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_03ea65ff"
   }
 ]

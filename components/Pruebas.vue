@@ -55,7 +55,8 @@ export default {
   props: ["id", "name", "description", "photo"],
   methods: {
     async addToCar(id) {
-      const product = await this.$axios.$post("/products/", { id });
+      const product = await this.$axios.$get("/products/" + id);
+      console.log(product);
       sessionStorage.setItem("product", JSON.stringify(product));
       this.$store.dispatch("sendProduct");
     },

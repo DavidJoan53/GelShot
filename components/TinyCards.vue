@@ -9,15 +9,22 @@
       <h1 class="cont2">${{ price }}</h1>
       <h1 class="cont3">x6</h1>
     </div>
-    <div><input type="button" value="X" class="close">X</div>
+    <button @click="removeProduct(id)">X</button>
   </div>
 </template>
 
 <script>
 export default {
   props: ["id", "name", "price", "photo"],
+  methods: {
+    removeProduct(id) {
+      sessionStorage.setItem("product", JSON.stringify(id));
+      this.$store.dispatch("removeProduct");
+      location.reload()
+    }
+  }
 };
-</script>>
+</script>
 
 <style>
 .tc-container {

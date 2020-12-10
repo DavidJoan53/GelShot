@@ -109,6 +109,7 @@ export default {
     customer: {},
   }),
   async created() {
+    this.$store.dispatch("readStorage");
     this.products = this.getOrder.products;
   },
   methods: {

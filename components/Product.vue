@@ -1,47 +1,92 @@
 <template>
   <div class="container_prod">
     <form>
+      <input type="file" v-on:change="selected"/>
       <div class="form_img"></div>
 
       <div class="form_content">
         <div class="form_title">
-          <input class="title_prod input_p" type="text" placeholder="Nombre" />
-          <input class="form_check" type="checkbox"/>
+          <input class="title_prod input_p" type="text" placeholder="Nombre" v-model="name"/>
+        </div>
+	<div class="div_input">
+            <label for="">Descripción</label>
+            <input type="text" class="input_cont input_p" placeholder="Descripción" v-model="description"/>
         </div>
         <div class="form_inputs">
           <div class="div_input">
             <label for="">Precio</label>
-            <input type="text" class="input_cont input_p" placeholder="$10.000" />
+            <input type="text" class="input_cont input_p" placeholder="$15.000" v-model="price"/>
           </div>
           <div class="div_input">
-            <label for="">Pack</label>
-            <input type="text" class="input_cont input_p" placeholder="x6" />
-          </div>
-          <div class="div_input">
-            <label for="">Sabor</label>
-            <input type="text" class="input_cont input_p" placeholder="Púrpura" />
+            <label for="">Tipo</label>
+            <input type="text" class="input_cont input_p" placeholder="Goma o gelatina" v-model="type"/>
           </div>
           <div class="div_input">
             <label for="">Licor</label>
-            <input type="text" class="input_cont input_p" placeholder="Ron" />
-          </div>
-          <div class="div_input">
-            <label for="">Descripción</label>
-            <input type="text" class="input_cont input_p" placeholder="Descripción" />
+            <input type="text" class="input_cont input_p" placeholder="Vodka, Brandy, etc" v-model="drink"/>
           </div>
         </div>
       </div>
-
-      <div class="form_buttons">
-        <button class="form_button">Eliminar</button>
-        <button class="form_button">Guardar</button>
+      <div v-if="id">
+	<div class="form_buttons">
+	  <button @click="deleteProduct(id)">Eliminar</button>
+	  <button @click="updateProduct(id)">Guardar</button>
+	</div>
+      </div>
+      <div v-else>
+	<div class="form_buttons">
+	  <button @click="createProduct">Agregar</button>
+	</div>
       </div>
     </form>
   </div>
 </template>
 
 <script>
-export default {};
+  export default {
+    props: ["id", "type", "name", "description", "drink", "photo", "price"],
+    methods: {
+      selected(event) {
+	this.photo = event.target.files[0];
+	console.log(this.photo);
+      },
+      async createProduct() {
+	try {
+	  const productToCreate = new FormData();
+	  productToCreate.append("name", this.name);
+	  productToCreate.append("type", this.type);
+	  productToCreate.append("description", this.description);
+	  productToCreate.append("drink", this.drink);
+	  productToCreate.append("price", this.price);
+	  productToCreate.append("photo", this.photo);
+	  const res = await this.$axios.$post('/products/', productToCreate);
+	} catch(error) {
+	  console.log(error)
+	}
+      },
+      async deleteProduct(id) {
+	try {
+	  const res = await this.$axios.$delete("/products/"+id);
+	} catch (error) {
+	  console.log(error)
+	}
+      },
+      async updateProduct(id) {
+	try {
+	  const productToEdit = new FormData();
+	  productToEdit.append("name", this.name);
+	  productToEdit.append("type", this.type);
+	  productToEdit.append("description", this.description);
+	  productToEdit.append("drink", this.drink);
+	  productToEdit.append("price", this.price);
+	  productToEdit.append("photo", this.photo);
+	  const res = await this.$axios.$put("/products/"+id, productToEdit)
+	} catch (error) {
+	  console.log(error);
+	}
+      }
+    }
+  };
 </script>
 
 <style>
