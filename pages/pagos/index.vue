@@ -90,7 +90,7 @@
           </div>
           <div class="container-total">
             <div class="total-title">Total:</div>
-            <div class="total-number">{{ getTotal }}</div>
+            <div class="total-number">${{ getTotal }}</div>
           </div>
         </div>
         <div></div>
@@ -199,7 +199,7 @@ export default {
 /*FORMULARIO*/
 .p_formulario {
   width: 50%;
-  margin-right: auto;
+  margin-left: auto;
 }
 
 .p_formulario h2 {
@@ -344,8 +344,8 @@ export default {
 
 /*CARRITO DE COMPRAS*/
 .p_carrito {
+  position: relative;
   width: 42%;
-  max-height: 800px;
   background-color: rgb(238, 238, 238);
   margin: 0 auto;
 }
@@ -380,7 +380,7 @@ export default {
 }
 
 .container-total {
-  margin-top: 20%;
+  margin: 20% 0 10% 0;
   width: 100%;
   display: flex;
   border-bottom: 1px solid #999;

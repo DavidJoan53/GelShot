@@ -1,5 +1,9 @@
 <template>
   <div class="tc-container">
+    <div class="div-elimination">
+      <button class="close" @click="removeProduct(id)">X</button>
+    </div>
+  <div class="div-product">
     <img class="tc-img" :src="photo" />
     <div class="tc-content">
       <h1 class="cont">{{ name }}:</h1>
@@ -9,7 +13,7 @@
       <h1 class="cont2">${{ price }}</h1>
       <h1 class="cont3">x6</h1>
     </div>
-    <button @click="removeProduct(id)">X</button>
+  </div>
   </div>
 </template>
 
@@ -30,11 +34,16 @@ export default {
 .tc-container {
   width: 100%;
   margin-top: 10%;
-  display: flex;
+  position: relative;
+  background-color: rgba(190, 187, 187, 0.5);
+  padding: 2px;
+  border-radius: 4px;
 }
 .tc-img {
   width: 30%;
   height: 80px;
+  margin: auto;
+  padding: 2px;
 }
 
 .tc-content {
@@ -54,8 +63,6 @@ export default {
   height: 30px;
   font-size: 16px;
   font-weight: 300;
-  margin-left: auto;
-  text-align: right;
 }
 .cont3 {
   width: 20%;
@@ -64,22 +71,21 @@ export default {
   padding-right: 5px;
 }
 
-.eliminar {
-  color: whitesmoke;
-  background-color: #c90a00;
-  border-radius: 50%;
-  width: 30%;
+.div-product{
+  width: 100%;
+  padding-top: 12px;
+  display: flex;
 }
-
 .close{
-  background-color: red;
-  line-height: 12px;
+  line-height: 18px;
   width: 18px;
   font-size: 8pt;
   font-family: tahoma;
-  margin: 1px 2px 4px 0;
+  margin: 4px 2px 4px 0;
   position:absolute;
   top:0;
   right:0;  
+  font-weight: 600;
+  font-size: 14px;
 }
 </style>
