@@ -5,8 +5,7 @@
       <span class="logout"><a href="/">Cerrar sesión</a></span>
     </div>
     <div class="content_adm row">
-      <Product />
-      <div v-for="product in products" :key="product._id" class="content_adm row">
+      <div v-for="product in products" :key="product._id" class="content_card row">
         <Product
           :id="product._id"
           :name="product.name"
@@ -15,6 +14,9 @@
           :type="product.type"
           :drink="product.drink"
         />
+      </div>
+      <div class="content_card row">
+        <Product />
       </div>
     </div>
   </div>
@@ -87,6 +89,11 @@ export default {
   width: 100%;
   margin: 2% auto;
   display: flex;
+}
+
+.content_card {
+  width: 29%;
+  margin: 2% auto;
 }
 
 @media (max-width: 800px) {

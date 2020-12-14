@@ -24,7 +24,7 @@
           </div>
           <div class="f_item">
             <label class="f_label" for="phone">*Número de celular</label>
-            <input v-model="customer.number" type="text" /><br />
+            <input v-model="customer.number" type="number" /><br />
           </div>
           <div class="f_item">
             <label class="f_label" for="email">*Correo electrónico</label>

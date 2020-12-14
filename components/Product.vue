@@ -8,11 +8,11 @@
         <div class="form_title">
           <input class="title_prod input_p" type="text" placeholder="Nombre" v-model="name"/>
         </div>
-	<div class="div_input">
+        <div class="form_inputs">
+          <div class="div_input">
             <label for="">Descripción</label>
             <input type="text" class="input_cont input_p" placeholder="Descripción" v-model="description"/>
-        </div>
-        <div class="form_inputs">
+          </div>
           <div class="div_input">
             <label for="">Precio</label>
             <input type="text" class="input_cont input_p" placeholder="$15.000" v-model="price"/>
@@ -92,7 +92,7 @@
 <style>
 .container_prod {
   font-family: 'Quicksand';
-  width: 29%;
+  width: 100%;
   margin: 0 auto 3% auto;
   border: 1px #999 solid;
   border-radius: 15px;
